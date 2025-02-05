@@ -1,0 +1,33 @@
+{
+    "rooms": [
+      {
+        "id": 1,
+        "roomType": "Deluxe",
+        "roomPrice": 2500,
+        "roomDescription": "Spacious deluxe room with a king-size bed and sea view.",
+        "roomPhotoUrl": "http://localhost:4040/uploads/deluxe.jpg"
+      },
+      {
+        "id": 2,
+        "roomType": "Suite",
+        "roomPrice": 5000,
+        "roomDescription": "Luxurious suite with a private balcony and jacuzzi.",
+        "roomPhotoUrl": "http://localhost:4040/uploads/suite.jpg"
+      },
+      {
+        "id": 3,
+        "roomType": "Standard",
+        "roomPrice": 1500,
+        "roomDescription": "Cozy standard room with all basic amenities.",
+        "roomPhotoUrl": "http://localhost:4040/uploads/standard.jpg"
+      },
+      {
+        "id": 4,
+        "roomType": "Family",
+        "roomPrice": 3500,
+        "roomDescription": "Family-friendly room with two queen-size beds and play area.",
+        "roomPhotoUrl": "http://localhost:4040/uploads/family.jpg"
+      }
+    ]
+  }
+  
