@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:4040";
+const BASE_URL = "http://localhost:8080";
 
 const getHeader = () => {
     const token = localStorage.getItem("token");
@@ -19,6 +19,7 @@ const ApiService = {
     getAllUsers: async () => (await axios.get(`${BASE_URL}/users/all`, { headers: getHeader() })).data,
     getUserProfile: async () => (await axios.get(`${BASE_URL}/users/get-logged-in-profile-info`, { headers: getHeader() })).data,
     getUser: async (userId) => (await axios.get(`${BASE_URL}/users/get-by-id/${userId}`, { headers: getHeader() })).data,
+    editProfile:async (userId,user)=>(await axios.put(`${BASE_URL}/users/edit-profile/${userId}`,user,{headers:getHeader()})).data,
     getUserBookings: async (userId) => (await axios.get(`${BASE_URL}/users/get-user-bookings/${userId}`, { headers: getHeader() })).data,
     deleteUser: async (userId) => (await axios.delete(`${BASE_URL}/users/delete/${userId}`, { headers: getHeader() })).data,
     
